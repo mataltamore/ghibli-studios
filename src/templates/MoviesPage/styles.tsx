@@ -57,11 +57,14 @@ export const Header = styled.header`
 export const Main = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
+`;
 
-  & > div {
-    width: 70%;
+export const MovieFilter = styled.div`
+  width: 70%;
+
+  .buttonList {
+    display: flex;
   }
 `;
 
@@ -98,11 +101,45 @@ type LabelProps = {
   author: string;
 };
 
-export const Label = styled.p`
-  background-color: ${(props: LabelProps) => getLabelColor(props.author)};
+export const Label = styled.p<LabelProps>`
+  background-color: ${(props) => getLabelColor(props.author)};
   font-size: ${TEXT_SIZE.SMALL};
   color: ${COLOR.WHITE};
 
   padding: 0.2rem 0.5rem;
   border-radius: 3px;
+`;
+
+type AuthorButtonProps = {
+  backgroundColor: {
+    primary: string;
+    secondary: string;
+  };
+};
+
+export const AuthorButton = styled.button<AuthorButtonProps>`
+  color: ${COLOR.GRAY};
+  background-color: ${COLOR.GRAY_100};
+  border-style: none;
+  border-bottom: 3px solid
+    ${(props) => props.backgroundColor.primary || COLOR.GRAY};
+  cursor: pointer;
+  padding: 1rem;
+  flex-grow: 1;
+
+  &:hover {
+    background-color: ${(props) =>
+      props.backgroundColor.secondary || COLOR.GRAY};
+  }
+`;
+
+export const GridList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 1rem;
+
+  & > div {
+    border: 1px solid purple;
+  }
 `;

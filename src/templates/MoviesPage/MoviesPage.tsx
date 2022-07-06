@@ -14,7 +14,34 @@ function MoviesPage() {
         </div>
       </Styled.Header>
       <Styled.Main>
-        <div>Lista</div>
+        <Styled.MovieFilter>
+          <div className="buttonList">
+            {body.authors.map((author) => (
+              <Styled.AuthorButton
+                type="button"
+                key={author.name}
+                backgroundColor={author.color}
+              >
+                {author.name}
+              </Styled.AuthorButton>
+            ))}
+          </div>
+          <Styled.GridList>
+            {body.movies.map((movie) => {
+              const authorFound = body.authors.find(
+                (author) => author.name === movie.author
+              );
+              return authorFound ? (
+                <MovieCard
+                  key={movie.title}
+                  title={movie.title}
+                  year={movie.year}
+                  author={authorFound.name}
+                />
+              ) : null;
+            })}
+          </Styled.GridList>
+        </Styled.MovieFilter>
         <MovieList />
       </Styled.Main>
     </>
@@ -34,6 +61,27 @@ function MovieList() {
         ))}
       </div>
     </Styled.Aside>
+  );
+}
+
+type MovieCardProps = {
+  title: string;
+  year: number;
+  author: string;
+};
+
+function MovieCard(props: MovieCardProps) {
+  const { year, author, title } = props;
+
+  return (
+    <div>
+      <div>image</div>
+      <div>
+        <p>{year}</p>
+        <p>{author}</p>
+      </div>
+      <p>{title}</p>
+    </div>
   );
 }
 

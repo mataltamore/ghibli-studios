@@ -90,5 +90,42 @@
       "year": 1984,
       "author": "Hayao Miyazaki"
     }
+  ],
+  "authors": [
+    {
+      "name": "Hayao Miyazaki",
+      "color": {
+        "primary": "rgb(0, 173, 239)",
+        "secondary": "rgb(169, 215, 240)"
+      }
+    },
+    {
+      "name": "Goro Miyazaki",
+      "color": {
+        "primary": "rgb(206, 189, 109)",
+        "secondary": "rgb(231, 226, 201)"
+      }
+    },
+    {
+      "name": "Hiromasa Yonebayashi",
+      "color": {
+        "primary": "rgb(218, 206, 171)",
+        "secondary": "rgb(234, 231, 220)"
+      }
+    },
+    {
+      "name": "Isao Takahata",
+      "color": {
+        "primary": "rgb(123, 177, 127)",
+        "secondary": "rgb(206, 222, 207)"
+      }
+    },
+    {
+      "name": "Yoshifumi Kondo",
+      "color": {
+        "primary": "rgb(240, 122, 122)",
+        "secondary": "rgb(241, 205, 205)"
+      }
+    }
   ]
 }
