@@ -5,10 +5,16 @@ import Image from "next/image";
 import SidebarImage from "../../../public/images/sidebar.png";
 import { useRouter } from "next/router";
 
-function SideBar() {
+type Props = {
+  toggleSideBar: boolean;
+};
+
+function SideBar(props: Props) {
+  const { toggleSideBar } = props;
   const { pathname: currentPage } = useRouter();
+
   return (
-    <Styled.SideBar>
+    <Styled.SideBar toggleSideBar={toggleSideBar}>
       <div>
         <Image src={SidebarImage} alt="Ghibli Sidebar" />
         <Styled.Menu>

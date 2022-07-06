@@ -11,7 +11,7 @@ function HomePage() {
 
   return (
     <DefaultLayout>
-      {toggleSideBar && <SideBar />}
+      <SideBar toggleSideBar={toggleSideBar} />
       <NavBar setToggleSideBar={setToggleSideBar} />
       <Image src={NavBar2} alt="foo" />
     </DefaultLayout>
