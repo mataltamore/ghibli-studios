@@ -32,33 +32,23 @@ export const SideBar = styled.div`
 export const Menu = styled.ul`
   color: ${COLOR.GRAY};
   font-size: ${TEXT_SIZE.MEDIUM};
-
-  & li {
-    cursor: pointer;
-    padding: 0.3rem 0rem;
-    text-trasform: uppercase;
-
-    &:hover {
-      color: ${COLOR.CYAN};
-    }
-  }
 `;
 
-export const SubMenu = styled.ul`
-  color: ${COLOR.GRAY};
-  font-size: ${TEXT_SIZE.MEDIUM};
-  border-left: 2px solid ${COLOR.GRAY};
+type MenuItemProps = {
+  pageTitle: string;
+  currentPage: string;
+};
 
-  padding-left: 1rem;
+export const MenuItem = styled.li`
+  color: ${(props: MenuItemProps) =>
+    props.currentPage === props.pageTitle ? COLOR.CYAN : COLOR.GRAY};
 
-  & li {
-    cursor: pointer;
-    padding: 0.3rem 0rem;
-    text-trasform: uppercase;
+  cursor: pointer;
+  padding: 0.3rem 0rem;
+  text-transform: uppercase;
 
-    &:hover {
-      color: ${COLOR.CYAN};
-    }
+  &:hover {
+    color: ${COLOR.CYAN};
   }
 `;
 

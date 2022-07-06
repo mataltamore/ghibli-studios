@@ -1,38 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import * as Styled from "./styles";
 import Link from "next/link";
 import Image from "next/image";
 import SidebarImage from "../../../public/images/sidebar.png";
+import { useRouter } from "next/router";
 
 function SideBar() {
+  const { pathname: currentPage } = useRouter();
   return (
     <Styled.SideBar>
       <div>
         <Image src={SidebarImage} alt="Ghibli Sidebar" />
         <Styled.Menu>
           <Link href="/">
-            <li>Homepage</li>
+            <Styled.MenuItem pageTitle="/" currentPage={currentPage}>
+              Homepage
+            </Styled.MenuItem>
           </Link>
           <Link href="/1">
-            <li>News/Blog</li>
+            <Styled.MenuItem pageTitle="/1" currentPage={currentPage}>
+              News/Blog
+            </Styled.MenuItem>
           </Link>
-          <li>Lo Studio</li>
-          <Styled.SubMenu>
-            <Link href="/3">
-              <li>La storia</li>
-            </Link>
-            <Link href="/4">
-              <li>I registi</li>
-            </Link>
-          </Styled.SubMenu>
+          <Link href="/2">
+            <Styled.MenuItem pageTitle="/3" currentPage={currentPage}>
+              Lo Studio
+            </Styled.MenuItem>
+          </Link>
           <Link href="/5">
-            <li>Filmografia</li>
+            <Styled.MenuItem pageTitle="/5" currentPage={currentPage}>
+              Filmografia
+            </Styled.MenuItem>
           </Link>
           <Link href="/6">
-            <li>Multimedia</li>
+            <Styled.MenuItem pageTitle="/6" currentPage={currentPage}>
+              Multimedia
+            </Styled.MenuItem>
           </Link>
           <Link href="/7">
-            <li>Contatti</li>
+            <Styled.MenuItem pageTitle="/7" currentPage={currentPage}>
+              Contatti
+            </Styled.MenuItem>
           </Link>
         </Styled.Menu>
       </div>

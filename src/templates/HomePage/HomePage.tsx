@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "../../components/NavBar/NavBar";
 
 import Image from "next/image";
@@ -7,10 +7,12 @@ import DefaultLayout from "../DefaultLayout/DefaultLayout";
 import SideBar from "../../components/SideBar/SideBar";
 
 function HomePage() {
+  const [toggleSideBar, setToggleSideBar] = useState(false);
+
   return (
     <DefaultLayout>
-      <SideBar />
-      <NavBar />
+      {toggleSideBar && <SideBar />}
+      <NavBar setToggleSideBar={setToggleSideBar} />
       <Image src={NavBar2} alt="foo" />
     </DefaultLayout>
   );

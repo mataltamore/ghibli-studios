@@ -5,14 +5,27 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Link from "next/link";
 import { COLOR, TEXT_SIZE } from "../../utilities/constants";
 
-function NavBar() {
+type Props = {
+  setToggleSideBar: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+function NavBar(props: Props) {
+  const { setToggleSideBar } = props;
+
+  function handleButton() {
+    setToggleSideBar((prev: boolean) => !prev);
+  }
+
   return (
     <Styled.NavBar>
       <div className="content">
         <div className="content__logo">
-          <GiHamburgerMenu
-            style={{ color: COLOR.CYAN, fontSize: TEXT_SIZE.LARGE }}
-          />
+          <Styled.HamburgerButton type="button" onClick={() => handleButton()}>
+            <GiHamburgerMenu
+              style={{ color: COLOR.CYAN, fontSize: TEXT_SIZE.LARGE }}
+            />
+          </Styled.HamburgerButton>
+
           <Link href="/">
             <Styled.Heading>StudioGhibli</Styled.Heading>
           </Link>
