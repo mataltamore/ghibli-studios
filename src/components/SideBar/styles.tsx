@@ -35,7 +35,7 @@ export const SideBar = styled.div`
   top: 50px;
   z-index: 1;
 
-  width: 20vw;
+  width: 17rem;
   height: calc(100% - 50px);
 
   display: flex;
