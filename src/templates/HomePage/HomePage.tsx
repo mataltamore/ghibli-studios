@@ -1,20 +1,12 @@
-import React, { useState } from "react";
-import NavBar from "../../components/NavBar/NavBar";
-
-import DefaultLayout from "../DefaultLayout/DefaultLayout";
-import SideBar from "../../components/SideBar/SideBar";
+import React from "react";
 
 import body from "../../content/HomePage.json";
 import * as Styled from "./styles";
 import Link from "next/link";
 
 function HomePage() {
-  const [toggleSideBar, setToggleSideBar] = useState(false);
-
   return (
-    <DefaultLayout>
-      <SideBar toggleSideBar={toggleSideBar} />
-      <NavBar setToggleSideBar={setToggleSideBar} />
+    <>
       <Header />
       <div
         style={{
@@ -63,7 +55,7 @@ function HomePage() {
       >
         Gallery
       </div>
-    </DefaultLayout>
+    </>
   );
 }
 
