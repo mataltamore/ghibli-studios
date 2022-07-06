@@ -5,7 +5,7 @@ type SideBarProps = {
   toggleSideBar: boolean;
 };
 
-export const SideBar = styled.div`
+export const SideBar = styled.aside`
   background-color: ${COLOR.WHITE};
 
   position: fixed;

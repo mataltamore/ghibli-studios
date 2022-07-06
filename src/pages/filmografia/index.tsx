@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import DefaultLayout from "../../templates/DefaultLayout/DefaultLayout";
+import MoviesPage from "../../templates/MoviesPage/MoviesPage";
 
 const IndexPage: NextPage = () => {
   return (
@@ -10,7 +11,9 @@ const IndexPage: NextPage = () => {
         <meta name="description" content="Studio Ghibli Blog Website Clone" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <DefaultLayout>Filmografia</DefaultLayout>
+      <DefaultLayout>
+        <MoviesPage />
+      </DefaultLayout>
     </>
   );
 };

@@ -1,0 +1,94 @@
+{
+  "movies": [
+    {
+      "title": "Earwig e la strega",
+      "year": 2020,
+      "author": "Goro Miyazaki"
+    },
+    {
+      "title": "Quando c'era Marnie",
+      "year": 2014,
+      "author": "Hiromasa Yonebayashi"
+    },
+    {
+      "title": "La Storia della Principessa Splendente",
+      "year": 2013,
+      "author": "Isao Takahata"
+    },
+    {
+      "title": "Si alza il vento",
+      "year": 2013,
+      "author": "Hayao Miyazaki"
+    },
+    {
+      "title": "La Collina dei Papaveri",
+      "year": 2011,
+      "author": "Goro Miyazaki"
+    },
+    {
+      "title": "Arrietty",
+      "year": 2010,
+      "author": "Hiromasa Yonebayashi"
+    },
+    {
+      "title": "Ponyo sulla scogliera",
+      "year": 2008,
+      "author": "Hayao Miyazaki"
+    },
+    {
+      "title": "I racconti di terramare",
+      "year": 2006,
+      "author": "Goro Miyazaki"
+    },
+    {
+      "title": "Il Castello Errante di Howl",
+      "year": 2004,
+      "author": "Hayao Miyazaki"
+    },
+    {
+      "title": "La città incantata",
+      "year": 2001,
+      "author": "Hayao Miyazaki"
+    },
+    {
+      "title": "Principessa Mononoke",
+      "year": 1997,
+      "author": "Hayao Miyazaki"
+    },
+    {
+      "title": "I sospiri del mio cuore",
+      "year": 1995,
+      "author": "Yoshifumi Kondo"
+    },
+    {
+      "title": "Pom Poko",
+      "year": 1994,
+      "author": "Isao Takahata"
+    },
+    {
+      "title": "Porco Rosso",
+      "year": 1992,
+      "author": "Hayao Miyazaki"
+    },
+    {
+      "title": "Kiki - Consegne a domicilio",
+      "year": 1989,
+      "author": "Hayao Miyazaki"
+    },
+    {
+      "title": "Il mio vicino Totoro",
+      "year": 1988,
+      "author": "Hayao Miyazaki"
+    },
+    {
+      "title": "Il Castello nel Cielo",
+      "year": 1986,
+      "author": "Hayao Miyazaki"
+    },
+    {
+      "title": "Nausicaa della Valle del Vento",
+      "year": 1984,
+      "author": "Hayao Miyazaki"
+    }
+  ]
+}
