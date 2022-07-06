@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { COLOR, TEXT_SIZE } from "../../utilities/constants";
 
-const StyledNavBar = styled.nav`
+export const NavBar = styled.nav`
   background-color: ${COLOR.WHITE};
 
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   height: 50px;
   padding-inline: 1rem;
 
@@ -12,25 +13,25 @@ const StyledNavBar = styled.nav`
   top: 0px;
   z-index: 1;
 
-  & > div {
+  .content {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
-    & > div {
+    &__logo {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
       gap: 20px;
       cursor: pointer;
-      color: ${COLOR.CYAN};
-      font-size: ${TEXT_SIZE.LARGE};
     }
   }
+`;
 
-  & h1 {
+export const Heading = styled.h1`
+   {
     background-color: ${COLOR.CYAN};
     color: ${COLOR.WHITE};
 
@@ -41,9 +42,11 @@ const StyledNavBar = styled.nav`
     cursor: pointer;
     padding-inline: 1rem;
   }
+`;
 
-  & ul {
-    color: ${COLOR.CYAN};
+export const List = styled.ul`
+   {
+    color: ${COLOR.GRAY};
     font-size: ${TEXT_SIZE.MEDIUM};
 
     display: flex;
@@ -53,5 +56,3 @@ const StyledNavBar = styled.nav`
     font-weight: 600;
   }
 `;
-
-export default StyledNavBar;

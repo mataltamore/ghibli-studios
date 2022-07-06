@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { MAX_WIDTH } from "../../utilities/constants";
 
-const StyledDefaultLayout = styled.main`
+export const DefaultLayout = styled.main`
   max-width: ${MAX_WIDTH};
 
   margin-inline: auto;
@@ -10,5 +10,3 @@ const StyledDefaultLayout = styled.main`
   align-items: stretch;
   justify-content: center;
 `;
-
-export default StyledDefaultLayout;

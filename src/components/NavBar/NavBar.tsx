@@ -1,36 +1,41 @@
 import React from "react";
-import StyledNavBar from "./StyledNavBar";
+import * as Styled from "./styles";
 import { BsFacebook, BsTwitter } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Link from "next/link";
+import { COLOR, TEXT_SIZE } from "../../utilities/constants";
 
 function NavBar() {
   return (
-    <>
-      <StyledNavBar>
-        <div>
-          <div>
-            <GiHamburgerMenu />
-            <Link href="/">
-              <h1>StudioGhibli</h1>
-            </Link>
-          </div>
-          <ul>
-            <li>Seguici su</li>
-            <li>
-              <a href="#facebook">
-                <BsFacebook />
-              </a>
-            </li>
-            <li>
-              <a href="#twitter">
-                <BsTwitter />
-              </a>
-            </li>
-          </ul>
+    <Styled.NavBar>
+      <div className="content">
+        <div className="content__logo">
+          <GiHamburgerMenu
+            style={{ color: COLOR.CYAN, fontSize: TEXT_SIZE.LARGE }}
+          />
+          <Link href="/">
+            <Styled.Heading>StudioGhibli</Styled.Heading>
+          </Link>
         </div>
-      </StyledNavBar>
-    </>
+        <Styled.List>
+          <li>Seguici su</li>
+          <li>
+            <a href="#facebook">
+              <BsFacebook
+                style={{ color: COLOR.FACEBOOK, fontSize: TEXT_SIZE.LARGE }}
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#twitter">
+              <BsTwitter
+                style={{ color: COLOR.TWITTER, fontSize: TEXT_SIZE.LARGE }}
+              />
+            </a>
+          </li>
+        </Styled.List>
+      </div>
+    </Styled.NavBar>
   );
 }
 

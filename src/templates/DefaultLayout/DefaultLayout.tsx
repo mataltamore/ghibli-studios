@@ -1,5 +1,5 @@
 import React from "react";
-import StyledDefaultLayout from "./StyledDefaultLayout";
+import * as Styled from "./styles";
 
 type Props = {
   children: React.ReactNode;
@@ -8,7 +8,7 @@ type Props = {
 function DefaultLayout(props: Props) {
   const { children } = props;
 
-  return <StyledDefaultLayout>{children}</StyledDefaultLayout>;
+  return <Styled.DefaultLayout>{children}</Styled.DefaultLayout>;
 }
 
 DefaultLayout.defaultProps = {
