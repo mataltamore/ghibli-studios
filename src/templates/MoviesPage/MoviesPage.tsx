@@ -22,7 +22,8 @@ function MoviesPage() {
 }
 
 function MovieFilter() {
-  const [authorSelected, setAuthorSelected] = useState("Tutti i film");
+  const ALL_MOVIES = "All Movies";
+  const [authorSelected, setAuthorSelected] = useState(ALL_MOVIES);
 
   function handleChangeAuthor(
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
@@ -31,8 +32,7 @@ function MovieFilter() {
   }
 
   const filterMoviesByAuthorSelected = body.movies.filter(
-    (movie) =>
-      authorSelected === "All Movies" || movie.author === authorSelected
+    (movie) => authorSelected === ALL_MOVIES || movie.author === authorSelected
   );
 
   return (
@@ -40,7 +40,7 @@ function MovieFilter() {
       <div className="buttonList">
         <Styled.AuthorButton
           type="button"
-          value={"All Movies"}
+          value={ALL_MOVIES}
           onClick={(event) => handleChangeAuthor(event)}
         >
           Tutti i film
