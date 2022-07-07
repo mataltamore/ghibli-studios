@@ -9,6 +9,7 @@ export enum COLOR {
   GRAY = "rgb(102, 102, 102)",
   GRAY_100 = "rgb(240, 240, 240)",
   GRAY_200 = "rgb(235, 235, 235)",
+  GRAY_300 = "rgb(230, 230, 230)",
   FACEBOOK = "rgb(59, 89, 152)",
   TWITTER = "rgb(29, 161, 242)",
   KONDO = "rgb(240, 122, 122)",

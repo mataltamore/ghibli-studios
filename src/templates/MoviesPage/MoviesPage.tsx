@@ -1,7 +1,7 @@
 import React from "react";
 import * as Styled from "./styles";
 import { BiCameraMovie } from "react-icons/bi";
-
+import Image from "next/image";
 import body from "../../content/MoviesPage.json";
 
 function MoviesPage() {
@@ -16,6 +16,9 @@ function MoviesPage() {
       <Styled.Main>
         <Styled.MovieFilter>
           <div className="buttonList">
+            <Styled.AuthorButton type="button">
+              Tutti i film
+            </Styled.AuthorButton>
             {body.authors.map((author) => (
               <Styled.AuthorButton
                 type="button"
@@ -37,6 +40,7 @@ function MoviesPage() {
                   title={movie.title}
                   year={movie.year}
                   author={authorFound.name}
+                  image={movie.src}
                 />
               ) : null;
             })}
@@ -68,20 +72,25 @@ type MovieCardProps = {
   title: string;
   year: number;
   author: string;
+  image: string;
 };
 
 function MovieCard(props: MovieCardProps) {
-  const { year, author, title } = props;
+  const { year, author, title, image } = props;
 
   return (
-    <div>
-      <div>image</div>
+    <Styled.Card>
+      <div className="cover">
+        <Image src={image} alt={title} layout="fill" />
+      </div>
       <div>
-        <p>{year}</p>
-        <p>{author}</p>
+        <Styled.MovieItem>
+          <Styled.Label author={author}>{year}</Styled.Label>
+          <p>{author}</p>
+        </Styled.MovieItem>
       </div>
       <p>{title}</p>
-    </div>
+    </Styled.Card>
   );
 }
 

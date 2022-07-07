@@ -3,92 +3,110 @@
     {
       "title": "Earwig e la strega",
       "year": 2020,
-      "author": "Goro Miyazaki"
+      "author": "Goro Miyazaki",
+      "src": "/images/movies/earwig.jpg"
     },
     {
       "title": "Quando c'era Marnie",
       "year": 2014,
-      "author": "Hiromasa Yonebayashi"
+      "author": "Hiromasa Yonebayashi",
+      "src": "/images/movies/marnie.jpg"
     },
     {
       "title": "La Storia della Principessa Splendente",
       "year": 2013,
-      "author": "Isao Takahata"
+      "author": "Isao Takahata",
+      "src": "/images/movies/principessa.jpg"
     },
     {
       "title": "Si alza il vento",
       "year": 2013,
-      "author": "Hayao Miyazaki"
+      "author": "Hayao Miyazaki",
+      "src": "/images/movies/vento.jpg"
     },
     {
       "title": "La Collina dei Papaveri",
       "year": 2011,
-      "author": "Goro Miyazaki"
+      "author": "Goro Miyazaki",
+      "src": "/images/movies/papaveri.jpg"
     },
     {
       "title": "Arrietty",
       "year": 2010,
-      "author": "Hiromasa Yonebayashi"
+      "author": "Hiromasa Yonebayashi",
+      "src": "/images/movies/arrietty.jpg"
     },
     {
       "title": "Ponyo sulla scogliera",
       "year": 2008,
-      "author": "Hayao Miyazaki"
+      "author": "Hayao Miyazaki",
+      "src": "/images/movies/ponyo.jpg"
     },
     {
       "title": "I racconti di terramare",
       "year": 2006,
-      "author": "Goro Miyazaki"
+      "author": "Goro Miyazaki",
+      "src": "/images/movies/terramare.jpg"
     },
     {
       "title": "Il Castello Errante di Howl",
       "year": 2004,
-      "author": "Hayao Miyazaki"
+      "author": "Hayao Miyazaki",
+      "src": "/images/movies/howl.jpg"
     },
     {
       "title": "La città incantata",
       "year": 2001,
-      "author": "Hayao Miyazaki"
+      "author": "Hayao Miyazaki",
+      "src": "/images/movies/incantata.jpg"
     },
     {
       "title": "Principessa Mononoke",
       "year": 1997,
-      "author": "Hayao Miyazaki"
+      "author": "Hayao Miyazaki",
+      "src": "/images/movies/mononoke.jpg"
     },
     {
       "title": "I sospiri del mio cuore",
       "year": 1995,
-      "author": "Yoshifumi Kondo"
+      "author": "Yoshifumi Kondo",
+      "src": "/images/movies/sospiri.jpg"
     },
     {
       "title": "Pom Poko",
       "year": 1994,
-      "author": "Isao Takahata"
+      "author": "Isao Takahata",
+      "src": "/images/movies/pom_poko.jpg"
     },
     {
       "title": "Porco Rosso",
       "year": 1992,
-      "author": "Hayao Miyazaki"
+      "author": "Hayao Miyazaki",
+      "src": "/images/movies/porco_rosso.jpg"
     },
     {
       "title": "Kiki - Consegne a domicilio",
       "year": 1989,
-      "author": "Hayao Miyazaki"
+      "author": "Hayao Miyazaki",
+      "src": "/images/movies/kiki.jpg"
     },
     {
       "title": "Il mio vicino Totoro",
       "year": 1988,
-      "author": "Hayao Miyazaki"
+      "author": "Hayao Miyazaki",
+      "src": "/images/movies/totoro.jpg"
     },
     {
       "title": "Il Castello nel Cielo",
       "year": 1986,
-      "author": "Hayao Miyazaki"
+      "author": "Hayao Miyazaki",
+      "src": "/images/movies/castello.jpg"
     },
     {
       "title": "Nausicaa della Valle del Vento",
       "year": 1984,
-      "author": "Hayao Miyazaki"
+      "author": "Hayao Miyazaki",
+      "src": "/images/movies/nausicaa.jpg"
     }
   ],
   "authors": [

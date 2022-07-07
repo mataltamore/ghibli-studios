@@ -65,6 +65,10 @@ export const MovieFilter = styled.div`
 
   .buttonList {
     display: flex;
+
+    position: sticky;
+    top: 50px;
+    z-index: 1;
   }
 `;
 
@@ -82,7 +86,7 @@ export const Aside = styled.aside`
   justify-content: flex-start;
   gap: 30px;
 
-  & > h2 {
+  & h2 {
     font-weight: 300;
   }
 `;
@@ -111,7 +115,7 @@ export const Label = styled.p<LabelProps>`
 `;
 
 type AuthorButtonProps = {
-  backgroundColor: {
+  backgroundColor?: {
     primary: string;
     secondary: string;
   };
@@ -122,24 +126,46 @@ export const AuthorButton = styled.button<AuthorButtonProps>`
   background-color: ${COLOR.GRAY_100};
   border-style: none;
   border-bottom: 3px solid
-    ${(props) => props.backgroundColor.primary || COLOR.GRAY};
+    ${(props) => props.backgroundColor?.primary || COLOR.GRAY};
   cursor: pointer;
   padding: 1rem;
   flex-grow: 1;
 
   &:hover {
     background-color: ${(props) =>
-      props.backgroundColor.secondary || COLOR.GRAY};
+      props.backgroundColor?.secondary || COLOR.GRAY_300};
   }
 `;
 
 export const GridList = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  padding: 1rem;
+  grid-column-gap: 15px;
+  grid-row-gap: 50px;
+  padding: 2rem 2rem 3rem 2rem;
+`;
 
-  & > div {
-    border: 1px solid purple;
+export const Card = styled.div`
+  color: ${COLOR.GRAY};
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+
+  .cover {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 135%;
+
+    & img {
+      border-radius: 5px;
+    }
+  }
+
+  & > p {
+    font-size: ${TEXT_SIZE.LARGE};
   }
 `;
