@@ -25,3 +25,9 @@ export enum TEXT_SIZE {
   LARGE = "1.25rem",
   HUGE = "2rem",
 }
+
+export enum Z_INDEX {
+  NAVBAR = "3",
+  SIDEBAR = "2",
+  ABOVE = "1",
+}

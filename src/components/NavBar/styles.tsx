@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLOR, TEXT_SIZE } from "../../utilities/constants";
+import { COLOR, TEXT_SIZE, Z_INDEX } from "../../utilities/constants";
 
 export const NavBar = styled.nav`
   background-color: ${COLOR.WHITE};
@@ -10,7 +10,7 @@ export const NavBar = styled.nav`
   width: 100%;
   position: sticky;
   top: 0px;
-  z-index: 1;
+  z-index: ${Z_INDEX.NAVBAR};
 
   .content {
     display: flex;
@@ -33,6 +33,9 @@ export const NavBar = styled.nav`
 export const HamburgerButton = styled.button`
   background-color: ${COLOR.WHITE};
   color: ${COLOR.WHITE};
+
+  width: 50px;
+  height: 50px;
   border: none;
   cursor: pointer;
   padding-inline: 1rem;

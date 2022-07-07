@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLOR, TEXT_SIZE } from "../../utilities/constants";
+import { COLOR, TEXT_SIZE, Z_INDEX } from "../../utilities/constants";
 import Park from "../../../public/images/park.jpg";
 
 const getLabelColor = (author: string) => {
@@ -68,7 +68,7 @@ export const MovieFilter = styled.div`
 
     position: sticky;
     top: 50px;
-    z-index: 1;
+    z-index: ${Z_INDEX.ABOVE};
   }
 `;
 

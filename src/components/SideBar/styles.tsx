@@ -1,9 +1,5 @@
 import styled from "styled-components";
-import { COLOR, TEXT_SIZE } from "../../utilities/constants";
-
-type SideBarProps = {
-  toggleSideBar: boolean;
-};
+import { COLOR, TEXT_SIZE, Z_INDEX } from "../../utilities/constants";
 
 export const SideBar = styled.aside`
   background-color: ${COLOR.WHITE};
@@ -11,7 +7,7 @@ export const SideBar = styled.aside`
   position: fixed;
   left: 0;
   top: 50px;
-  z-index: 1;
+  z-index: ${Z_INDEX.SIDEBAR};
 
   width: 17rem;
   height: calc(100% - 50px);
