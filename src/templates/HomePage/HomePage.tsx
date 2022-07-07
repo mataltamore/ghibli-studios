@@ -70,7 +70,7 @@ function Header() {
       <p>{body.description}</p>
       <Styled.ButtonSection>
         <Link href={ROUTE.STORY}>
-          <Styled.Button>Vai alla storia</Styled.Button>
+          <Styled.Button>Vai alla Storia</Styled.Button>
         </Link>
         <Link href={ROUTE.MOVIES}>
           <Styled.Button>Filmografia</Styled.Button>

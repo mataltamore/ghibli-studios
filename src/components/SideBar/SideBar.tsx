@@ -26,7 +26,7 @@ function SideBar() {
           </Link>
           <Link href={ROUTE.STORY}>
             <Styled.MenuItem pageTitle={ROUTE.STORY} currentPage={currentPage}>
-              La storia
+              La Storia
             </Styled.MenuItem>
           </Link>
           <Link href={ROUTE.AUTHORS}>
