@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import SidebarImage from "../../../public/images/sidebar.png";
 import { useRouter } from "next/router";
+import { ROUTE } from "../../utilities/constants";
 
 function SideBar() {
   const { pathname: currentPage } = useRouter();
@@ -13,33 +14,44 @@ function SideBar() {
       <div>
         <Image src={SidebarImage} alt="Ghibli Sidebar" />
         <Styled.Menu>
-          <Link href="/">
-            <Styled.MenuItem pageTitle="/" currentPage={currentPage}>
+          <Link href={ROUTE.HOME}>
+            <Styled.MenuItem pageTitle={ROUTE.HOME} currentPage={currentPage}>
               Homepage
             </Styled.MenuItem>
           </Link>
-          <Link href="/news">
-            <Styled.MenuItem pageTitle="/news" currentPage={currentPage}>
+          <Link href={ROUTE.NEWS}>
+            <Styled.MenuItem pageTitle={ROUTE.NEWS} currentPage={currentPage}>
               News
             </Styled.MenuItem>
           </Link>
-          <Link href="/studio">
-            <Styled.MenuItem pageTitle="/studio" currentPage={currentPage}>
-              Lo Studio
+          <Link href={ROUTE.STORY}>
+            <Styled.MenuItem pageTitle={ROUTE.STORY} currentPage={currentPage}>
+              La storia
             </Styled.MenuItem>
           </Link>
-          <Link href="/filmografia">
-            <Styled.MenuItem pageTitle="/filmografia" currentPage={currentPage}>
+          <Link href={ROUTE.AUTHORS}>
+            <Styled.MenuItem
+              pageTitle={ROUTE.AUTHORS}
+              currentPage={currentPage}
+            >
+              I registi
+            </Styled.MenuItem>
+          </Link>
+          <Link href={ROUTE.MOVIES}>
+            <Styled.MenuItem pageTitle={ROUTE.MOVIES} currentPage={currentPage}>
               Filmografia
             </Styled.MenuItem>
           </Link>
-          <Link href="/multimedia">
-            <Styled.MenuItem pageTitle="/multimedia" currentPage={currentPage}>
+          <Link href={ROUTE.MEDIA}>
+            <Styled.MenuItem pageTitle={ROUTE.MEDIA} currentPage={currentPage}>
               Multimedia
             </Styled.MenuItem>
           </Link>
-          <Link href="/contatti">
-            <Styled.MenuItem pageTitle="/contatti" currentPage={currentPage}>
+          <Link href={ROUTE.CONTACTS}>
+            <Styled.MenuItem
+              pageTitle={ROUTE.CONTACTS}
+              currentPage={currentPage}
+            >
               Contatti
             </Styled.MenuItem>
           </Link>

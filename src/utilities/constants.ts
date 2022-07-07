@@ -1,3 +1,13 @@
+export enum ROUTE {
+  HOME = "/",
+  NEWS = "/news",
+  STORY = "/storia",
+  AUTHORS = "/registi",
+  MOVIES = "/filmografia",
+  MEDIA = "/multimedia",
+  CONTACTS = "/contatti",
+}
+
 export const MAX_WIDTH = "90rem";
 
 export enum COLOR {

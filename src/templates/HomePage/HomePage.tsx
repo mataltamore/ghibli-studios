@@ -3,6 +3,7 @@ import React from "react";
 import body from "../../content/HomePage.json";
 import * as Styled from "./styles";
 import Link from "next/link";
+import { ROUTE } from "../../utilities/constants";
 
 function HomePage() {
   return (
@@ -68,10 +69,10 @@ function Header() {
       </h1>
       <p>{body.description}</p>
       <Styled.ButtonSection>
-        <Link href="/storia">
+        <Link href={ROUTE.STORY}>
           <Styled.Button>Vai alla storia</Styled.Button>
         </Link>
-        <Link href="/filmografia">
+        <Link href={ROUTE.MOVIES}>
           <Styled.Button>Filmografia</Styled.Button>
         </Link>
       </Styled.ButtonSection>
