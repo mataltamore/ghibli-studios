@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { COLOR, TEXT_SIZE } from "../../utilities/constants";
 import NavBar2 from "../../../public/images/navbar-2.jpg";
 

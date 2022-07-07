@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import * as Styled from "./styles";
+
+import NavBar from "../../components/NavBar/NavBar";
+import SideBar from "../../components/SideBar/SideBar";
 
 type Props = {
   children: React.ReactNode;
@@ -7,8 +10,15 @@ type Props = {
 
 function DefaultLayout(props: Props) {
   const { children } = props;
+  const [toggleSideBar, setToggleSideBar] = useState(false);
 
-  return <Styled.DefaultLayout>{children}</Styled.DefaultLayout>;
+  return (
+    <Styled.DefaultLayout>
+      {toggleSideBar && <SideBar />}
+      <NavBar setToggleSideBar={setToggleSideBar} />
+      {children}
+    </Styled.DefaultLayout>
+  );
 }
 
 DefaultLayout.defaultProps = {

@@ -5,16 +5,11 @@ import Image from "next/image";
 import SidebarImage from "../../../public/images/sidebar.png";
 import { useRouter } from "next/router";
 
-type Props = {
-  toggleSideBar: boolean;
-};
-
-function SideBar(props: Props) {
-  const { toggleSideBar } = props;
+function SideBar() {
   const { pathname: currentPage } = useRouter();
 
   return (
-    <Styled.SideBar toggleSideBar={toggleSideBar}>
+    <Styled.SideBar>
       <div>
         <Image src={SidebarImage} alt="Ghibli Sidebar" />
         <Styled.Menu>
@@ -23,28 +18,28 @@ function SideBar(props: Props) {
               Homepage
             </Styled.MenuItem>
           </Link>
-          <Link href="/1">
-            <Styled.MenuItem pageTitle="/1" currentPage={currentPage}>
-              News/Blog
+          <Link href="/news">
+            <Styled.MenuItem pageTitle="/news" currentPage={currentPage}>
+              News
             </Styled.MenuItem>
           </Link>
-          <Link href="/2">
-            <Styled.MenuItem pageTitle="/3" currentPage={currentPage}>
+          <Link href="/studio">
+            <Styled.MenuItem pageTitle="/studio" currentPage={currentPage}>
               Lo Studio
             </Styled.MenuItem>
           </Link>
-          <Link href="/5">
-            <Styled.MenuItem pageTitle="/5" currentPage={currentPage}>
+          <Link href="/filmografia">
+            <Styled.MenuItem pageTitle="/filmografia" currentPage={currentPage}>
               Filmografia
             </Styled.MenuItem>
           </Link>
-          <Link href="/6">
-            <Styled.MenuItem pageTitle="/6" currentPage={currentPage}>
+          <Link href="/multimedia">
+            <Styled.MenuItem pageTitle="/multimedia" currentPage={currentPage}>
               Multimedia
             </Styled.MenuItem>
           </Link>
-          <Link href="/7">
-            <Styled.MenuItem pageTitle="/7" currentPage={currentPage}>
+          <Link href="/contatti">
+            <Styled.MenuItem pageTitle="/contatti" currentPage={currentPage}>
               Contatti
             </Styled.MenuItem>
           </Link>
