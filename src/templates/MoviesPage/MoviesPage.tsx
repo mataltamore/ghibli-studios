@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import * as Styled from "./styles";
 import { BiCameraMovie } from "react-icons/bi";
 import Image from "next/image";
@@ -14,41 +14,66 @@ function MoviesPage() {
         </div>
       </Styled.Header>
       <Styled.Main>
-        <Styled.MovieFilter>
-          <div className="buttonList">
-            <Styled.AuthorButton type="button">
-              Tutti i film
-            </Styled.AuthorButton>
-            {body.authors.map((author) => (
-              <Styled.AuthorButton
-                type="button"
-                key={author.name}
-                backgroundColor={author.color}
-              >
-                {author.name}
-              </Styled.AuthorButton>
-            ))}
-          </div>
-          <Styled.GridList>
-            {body.movies.map((movie) => {
-              const authorFound = body.authors.find(
-                (author) => author.name === movie.author
-              );
-              return authorFound ? (
-                <MovieCard
-                  key={movie.title}
-                  title={movie.title}
-                  year={movie.year}
-                  author={authorFound.name}
-                  image={movie.src}
-                />
-              ) : null;
-            })}
-          </Styled.GridList>
-        </Styled.MovieFilter>
+        <MovieFilter />
         <MovieList />
       </Styled.Main>
     </>
+  );
+}
+
+function MovieFilter() {
+  const [authorSelected, setAuthorSelected] = useState("Tutti i film");
+
+  function handleChangeAuthor(
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) {
+    setAuthorSelected(event.currentTarget.value);
+  }
+
+  const filterMoviesByAuthorSelected = body.movies.filter(
+    (movie) =>
+      authorSelected === "All Movies" || movie.author === authorSelected
+  );
+
+  return (
+    <Styled.MovieFilter>
+      <div className="buttonList">
+        <Styled.AuthorButton
+          type="button"
+          value={"All Movies"}
+          onClick={(event) => handleChangeAuthor(event)}
+        >
+          Tutti i film
+        </Styled.AuthorButton>
+        {body.authors.map((author) => (
+          <Styled.AuthorButton
+            type="button"
+            key={author.name}
+            backgroundColor={author.color}
+            value={author.name}
+            onClick={(event) => handleChangeAuthor(event)}
+          >
+            {author.name}
+          </Styled.AuthorButton>
+        ))}
+      </div>
+      <Styled.GridList>
+        {filterMoviesByAuthorSelected.map((movie) => {
+          const authorFound = body.authors.find(
+            (author) => author.name === movie.author
+          );
+          return authorFound ? (
+            <MovieCard
+              key={movie.title}
+              title={movie.title}
+              year={movie.year}
+              author={authorFound.name}
+              image={movie.src}
+            />
+          ) : null;
+        })}
+      </Styled.GridList>
+    </Styled.MovieFilter>
   );
 }
 
