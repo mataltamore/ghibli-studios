@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import DefaultLayout from "../../templates/DefaultLayout/DefaultLayout";
+import DefaultLayout from "../../templates/layouts/DefaultLayout/DefaultLayout";
 import MoviesPage from "../../templates/MoviesPage/MoviesPage";
 
 const IndexPage: NextPage = () => {
