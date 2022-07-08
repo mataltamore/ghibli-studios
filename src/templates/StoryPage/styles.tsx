@@ -35,8 +35,20 @@ export const Slider = styled.div`
     padding: 1rem 2rem;
   }
 
-  & input {
+  & input[type="radio"] {
+    border: 2px solid ${COLOR.WHITE};
+
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-clip: content-box;
+    padding: 3px;
     cursor: pointer;
+  }
+
+  input[type="radio"]:checked {
+    background-color: ${COLOR.WHITE};
   }
 `;
 
