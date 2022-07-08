@@ -1,44 +1,44 @@
 import styled from "styled-components";
 import { COLOR, TEXT_SIZE } from "../../utilities/constants";
-import Banner from "../../../public/images/story-banner.jpg";
-
-export const Header = styled.header`
-  background-color: ${COLOR.WHITE};
-
-  background-image: url(${Banner.src});
-
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
-  padding: 1rem;
-
-  & > div {
-    color: ${COLOR.WHITE};
-    font-size: ${TEXT_SIZE.LARGE};
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-
-    & > h1 {
-      font-weight: 500;
-    }
-
-    & > svg {
-      font-size: ${TEXT_SIZE.HUGE};
-    }
-  }
-`;
 
 export const Main = styled.div`
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.875rem;
+
+  padding: 2rem;
+`;
+
+export const Slider = styled.div`
+  background-color: ${COLOR.CYAN};
+
+  display: flex;
+  gap: 10px;
+  width: fit-content;
+  border-radius: 30px;
+  padding: 1rem;
+
+  & input {
+    cursor: pointer;
+  }
+`;
+
+export const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+
+  & h2 {
+    color: ${COLOR.GRAY};
+    font-size: ${TEXT_SIZE.LARGE};
+  }
+
+  & p {
+    color: ${COLOR.GRAY};
+    font-size: ${TEXT_SIZE.MEDIUM};
+    line-height: 1.25rem;
+    text-align: justify;
+  }
 `;
