@@ -10,6 +10,8 @@ export enum ROUTE {
 
 export const MAX_WIDTH = "90rem";
 
+export const NAVBAR_HEIGHT = "3.125rem";
+
 export enum COLOR {
   CYAN = "rgb(0, 173, 239)",
   CYAN_HOVER = "rgb(0, 153, 219)",

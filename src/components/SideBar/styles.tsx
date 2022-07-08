@@ -1,16 +1,21 @@
 import styled from "styled-components";
-import { COLOR, TEXT_SIZE, Z_INDEX } from "../../utilities/constants";
+import {
+  COLOR,
+  TEXT_SIZE,
+  Z_INDEX,
+  NAVBAR_HEIGHT,
+} from "../../utilities/constants";
 
 export const SideBar = styled.aside`
   background-color: ${COLOR.WHITE};
 
   position: fixed;
   left: 0;
-  top: 50px;
+  top: ${NAVBAR_HEIGHT};
   z-index: ${Z_INDEX.SIDEBAR};
 
   width: 17rem;
-  height: calc(100% - 50px);
+  height: calc(100% - ${NAVBAR_HEIGHT});
 
   display: flex;
   flex-direction: column;

@@ -20,7 +20,11 @@ function NavBar(props: Props) {
     <Styled.NavBar>
       <div className="content">
         <div className="content__logo">
-          <Styled.HamburgerButton type="button" onClick={() => handleButton()}>
+          <Styled.HamburgerButton
+            type="button"
+            onClick={() => handleButton()}
+            onBlur={() => handleButton()}
+          >
             <GiHamburgerMenu
               style={{ color: COLOR.CYAN, fontSize: TEXT_SIZE.LARGE }}
             />

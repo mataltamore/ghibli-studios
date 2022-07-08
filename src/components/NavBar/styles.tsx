@@ -1,11 +1,16 @@
 import styled from "styled-components";
-import { COLOR, TEXT_SIZE, Z_INDEX } from "../../utilities/constants";
+import {
+  COLOR,
+  TEXT_SIZE,
+  Z_INDEX,
+  NAVBAR_HEIGHT,
+} from "../../utilities/constants";
 
 export const NavBar = styled.nav`
   background-color: ${COLOR.WHITE};
 
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  height: 50px;
+  height: ${NAVBAR_HEIGHT};
 
   width: 100%;
   position: sticky;
@@ -34,8 +39,8 @@ export const HamburgerButton = styled.button`
   background-color: ${COLOR.WHITE};
   color: ${COLOR.WHITE};
 
-  width: 50px;
-  height: 50px;
+  width: ${NAVBAR_HEIGHT};
+  height: ${NAVBAR_HEIGHT};
   border: none;
   cursor: pointer;
   padding-inline: 1rem;
@@ -48,7 +53,7 @@ export const Heading = styled.h1`
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.5px;
-  line-height: 50px;
+  line-height: ${NAVBAR_HEIGHT};
   cursor: pointer;
   padding-inline: 1rem;
 `;

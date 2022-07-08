@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { COLOR, Z_INDEX } from "../../utilities/constants";
+import { COLOR, Z_INDEX, NAVBAR_HEIGHT } from "../../utilities/constants";
 
 export const MovieFilter = styled.div`
   .buttonList {
     display: flex;
 
     position: sticky;
-    top: 50px;
+    top: ${NAVBAR_HEIGHT};
     z-index: ${Z_INDEX.ABOVE};
   }
 `;
