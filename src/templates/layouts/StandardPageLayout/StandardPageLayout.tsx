@@ -4,19 +4,19 @@ import { IconType } from "react-icons";
 
 type Props = {
   cover: string;
-  icon?: IconType;
   title: string;
   mainContent: React.ReactNode;
   sideContent: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 function StandardPageLayout(props: Props) {
-  const { cover, icon, title, mainContent, sideContent } = props;
+  const { cover, children, title, mainContent, sideContent } = props;
   return (
     <>
       <Styled.Header cover={cover}>
         <div>
-          <>{icon}</>
+          {children}
           <h1>{title}</h1>
         </div>
       </Styled.Header>

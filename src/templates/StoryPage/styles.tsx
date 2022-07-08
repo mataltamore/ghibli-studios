@@ -12,13 +12,28 @@ export const Main = styled.div`
 `;
 
 export const Slider = styled.div`
-  background-color: ${COLOR.CYAN};
-
   display: flex;
-  gap: 10px;
-  width: fit-content;
-  border-radius: 30px;
-  padding: 1rem;
+  align-items: center;
+  gap: 0.625rem;
+
+  & svg {
+    font-size: ${TEXT_SIZE.HUGE};
+    color: ${COLOR.CYAN};
+
+    cursor: pointer;
+  }
+
+  & > div {
+    background-color: ${COLOR.CYAN};
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    border-radius: 30px;
+    padding: 1rem 2rem;
+  }
 
   & input {
     cursor: pointer;

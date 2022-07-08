@@ -11,11 +11,12 @@ function MoviesPage() {
   return (
     <StandardPageLayout
       cover={Park.src}
-      icon={BiCameraMovie}
       title="Filmografia"
       mainContent={<MovieFilter />}
       sideContent={<MovieList />}
-    />
+    >
+      <BiCameraMovie />
+    </StandardPageLayout>
   );
 }
 
