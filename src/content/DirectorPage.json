@@ -1,0 +1,67 @@
+{
+  "directors": [
+    {
+      "name": {
+        "latin": "Hayao Miyazaki",
+        "kanji": "宮崎 駿"
+      },
+      "birth": {
+        "date": "1941-01-05",
+        "location": "Tokyo"
+      },
+      "description": "Hayao Miyazaki è nato a Tokyo, nel 1941. Dopo essersi laureato nel 1963 all'Università di Gakushuin in Scienze Politiche ed Economiche, è entrato a far parte della Toei Animation Company. Come nel caso del suo mentore Isao Takahata, questa scelta è apparsa agli occhi di molti decisamente strana, vista la sua formazione universitaria. Fin da quando era studente, tuttavia, l'interesse di Miyazaki per la letteratura per ragazzi era apparso molto acceso: divorava decine e decine di libri per ragazzi scritti in tutto il mondo ed era un superbo disegnatore. Come animatore, Miyazaki ha lavorato a molte serie televisive e lungometraggi, spesso in collaborazione con Isao Takahata. Tra le serie tv più note, Miyazaki ha diretto The Future Boy Conan (Conan, il Ragazzo del Futuro) nel 1978 e, tra i lungometraggi, The Castle of Cagliostro (Lupin III: Il Castello di Cagliostro) nel 1979. Agli inizi degli anni '80 Miyazaki ha vissuto a Los Angeles per studiare animazione. Uno dei suoi migliori studenti, nonché amico, di questo periodo è stato John Lasseter, la mente creativa della Pixar Animation, nonché regista di Toy Story, A Bug's Life e Toy Story 2. In questo periodo Miyazaki ha anche scritto e illustrato la serie grafica di Nausicaa of the Valley of the Wind (Nausicaa della Valle del Vento), molto apprezzata dalla critica. Miyazaki ha fondato lo Studio Ghibli nel 1985 insieme a Takahata e da allora ha diretto otto lungometraggi. Spirited Away (La Città Incantata) ha battuto ogni record al box-office giapponese e ha vinto numerosissimi premi, tra cui l'Orso d'Oro al Festival di Berlino nel 2002 e l'Oscar per il Miglior Film di Animazione nel 2003. Il suo ultimo film, Howl's Moving Castle (Il Castello Errante di Howl), tratto dal romanzo di Diana Wynne Jones, è stato presentato alla Mostra del Cinema di Venezia in anteprima mondiale e ha ottenuto l'Osella per il Miglior Contributo Tecnico. Sempre la Mostra del Cinema di Venezia gli consegnerà a settembre 2005 il Leone d'Oro alla Carriera, il primo in assoluto destinato a un regista di film di animazione. Miyazaki ha pubblicato anche numerosi libri con poesie e disegni, ha disegnato palazzi, tra cui il Ghibli Museum, nel parco di Mitaka di Tokio."
+    },
+    {
+      "name": {
+        "latin": "Goro Miyazaki",
+        "kanji": "宮崎 吾朗"
+      },
+      "birth": {
+        "date": "1967-01-21",
+        "location": "Tokyo"
+      },
+      "description": "Figlio del maestro d'animazione giapponese Hayao Miyazaki, Goro nasce a Tokyo nel 1967. Da bambini, Goro e suo fratello minore Keisuke trovarono alcuni sketch dei lavori del padre. Goro ha sempre pensato che non sarebbe mai stato ai livelli di suo padre e decise di intraprendere la carriera agricola. Laureato in agricoltura e scienze forestali all'università di Shinshu, Goro si era precedentemente occupato della progettazione di giardini e di sedi di istituzioni pubbliche. Tra l'altro ha progettato il monumentale parco a tema dello Studio Ghibli, il Ghibli Museum, che ha diretto fino al giugno 2005. Riluttante per lungo tempo a seguire le orme del padre, è stato convinto dal produttore Toshio Suzuki prima a lavorare al Ghibli Museum e poi per lo Studio Ghibli. Il suo primo lavoro s'intitola Gedo Senki ed è tratto da Il Ciclo di Earthsea della scrittrice americana Ursula Le Guin. Inizialmente Suzuki ha assegnato al giovane Miyazaki la stesura degli storyboard e successivamente la regia, nonostante il padre non lo ritenesse ancora pronto per dirigere un film d'animazione. Il 28 giugno 2006 Goro Miyazaki tenne la prima anteprima di Tales from Earthsea (I racconti di Terramare) ottenendo un consenso positivo da parte del padre. Nel 2011 Goro Miyazaki diresse La collina dei papaveri, tratto dal manga del 1980 di Chizuru Takahashi eTetsuro Sayama, aggiudicandosi il Japan Academy Prize come Miglior Film d'Animazione dell'anno. Il 31 gennaio 2014, è stato annunciato che Goro Miyazaki avrebbe diretto il suo primo anime, Sanzoku no Musume Ronya."
+    },
+    {
+      "name": {
+        "latin": "Hiromasa Yonebayashi",
+        "kanji": "米林 宏昌"
+      },
+      "birth": {
+        "date": "1973-00-00",
+        "location": "Prefettura di Ishikawa"
+      },
+      "description": "Nato in Giappone nel 1973, Yonebayashi è animatore e regista per Studio Ghibli. Dopo diversi anni di collaborazioni in veste di animatore per la lavorazione di alcuni film di Miyazaki, ha esordito alla regia nel 2010 con Arrietty - Il mondo segreto sotto il pavimento, tratto dalla serie di romanzi degli Sgraffignoli di Mary Norton, diventando così il più giovane regista dello studio. Yonebayashi collabora all'animazione di 8 lungometraggi dello Studio Ghibli, nell'arco di oltre 10 anni. Dopo questo lungo periodo come animatore, lo stesso Hayao Miyazaki scrive una sceneggiatura per un lungometraggio, tratta dal romanzo di Mary Norton The Borrowers (I Rubacchiotti) e ne offre la regia a Yonebayashi, donandogli allo stesso tempo la possibilità di dirigere il suo primo film. Yonebayashi accetta l'offerta e sotto la supervisione di Miyazaki realizza il film che segna il suo debutto come regista. Il film è uscito il 17 giugno 2010 in patria, incassando molto bene. Il 4 novembre dello stesso anno, è stato presentato in anteprima nazionale al Festival Internazionale del Film di Roma, alla presenza del regista e del produttore del film, Toshio Suzuki."
+    },
+    {
+      "name": {
+        "latin": "Isao Takahata",
+        "kanji": "高畑 勲"
+      },
+      "birth": {
+        "date": "1935-10-29",
+        "location": "Prefettura di Mie"
+      },
+      "death": {
+        "date": "2018-04-05",
+        "location": "Tokyo"
+      },
+      "description": "Takahata nasce nella prefettura di Mie, anche se trascorre gran parte della sua infanzia e adolescenza nella prefettura di Okayama. Cresce in un ambiente dove ha la possibilità di accostarsi sin dall'infanzia alla letteratura e alla musica, ed uno dei suoi primi interessi è la storia dell'arte, che intraprenderà come percorso di studio. Conclusi gli studi superiori si immatricola alla prestigiosa Università di Tokyo, iscrivendosi al corso di letteratura francese e conseguendo una laurea nel 1954. Grande ammiratore della poesia di Prévert, che scopre durante il periodo universitario, tanto che più avanti cura la traduzione delle sue opere dal francese al giapponese. Una raccolta di questi lavori è stata pubblicata alla fine del 2004. Durante il periodo universitario nasce in lui un interesse per la storia del cinema e prende parte al club di studi cinematografici e scrive articoli sul cinema su una rivista studentesca. È particolarmente interessato al cinema francese e scopre in Prévert non solo il poeta ma anche lo sceneggiatore, ed il suo lavoro con l'animatore Paul Grimault. Nel 1953 esce in Francia La Bergère et le ramoneur di Grimault e Prévert, un'opera di grande portata ma rinnegata dai suoi autori - in questa versione - perché poco curata e incompleta. Nonostante questo il film viene comunque proiettato in Giappone due anni dopo, affascinando fortemente il pubblico. Per Takahata questo film è un'illuminazione, poiché l'animazione giapponese era ancora saldamente legata al modello disneyano. La Bergère et le ramoneur diventa per lui un punto di partenza per esplorare tutto ciò che il cinema d'animazione consente di fare."
+    },
+    {
+      "name": {
+        "latin": "Yoshifumi Kondo",
+        "kanji": "近藤 喜文"
+      },
+      "birth": {
+        "date": "1950-03-31",
+        "location": "Prefettura di Niigata"
+      },
+      "death": {
+        "date": "1998-01-21",
+        "location": "Tachikawa, Tokyo"
+      },
+      "description": "Kondo  naque in Giappone nel 1950 e dedicò gli ultimi anni della sua vita allo Studio Ghibli. E- stato animatore per Porco Rosso e Pom Poko, disegnatore di Anna dai capelli rossi e Una Tomba per le lucciole, e supervisore dell-animazione per Kiki - Consegne a domicilio e La Principessa Mononoke. Kondo diresse per Studio Ghibli il lungometraggio d-animazione I Sospiri del mio cuore, e sarebbe dovuto diventare uno dei top director dello Studio al fianco di Miyazaki e Takahata, nonché loro eventuale successore. Purtroppo morì di aneurisma nel 1998. Si dice che la sua morte sia stata causata dal lavoro eccessivo, e pare sia stata la ragione che, nel 1998, ha spinto Miyazaki ad annunciare il suo ritiro. Nonostante Miyazaki abbia continuato a lavorare per altri 15 anni, la morte di Kondo  ha fortemente influenzato il lavoro del Maestro."
+    }
+  ]
+}
