@@ -21,6 +21,7 @@ export const Label = styled.p<LabelProps>`
   font-size: ${TEXT_SIZE.SMALL};
   color: ${COLOR.WHITE};
 
+  cursor: pointer;
   padding: 0.2rem 0.5rem;
   border-radius: 3px;
 `;
