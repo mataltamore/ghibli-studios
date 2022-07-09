@@ -7,7 +7,7 @@ import {
   formatDirectorToUrl,
 } from "../../utilities/functions";
 import { RiMovie2Line } from "react-icons/ri";
-import body from "../../content/DirectorPage.json";
+import body from "../../content/mockAPI.json";
 import Image from "next/image";
 import * as Styled from "./styles";
 import { getDateItalianFormat } from "../../utilities/functions";

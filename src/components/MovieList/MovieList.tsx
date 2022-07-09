@@ -1,8 +1,7 @@
-import body from "../../content/MoviesPage.json";
-import body2 from "../../content/DirectorPage.json";
-
 import * as Styled from "./styled";
 import Link from "next/link";
+
+import body from "../../content/mockAPI.json";
 
 function MovieList() {
   return (
@@ -10,7 +9,7 @@ function MovieList() {
       <h2>Filmografia temporale</h2>
       <div>
         {body.movies.map((movie) => {
-          const directorFound = body2.directors.find(
+          const directorFound = body.directors.find(
             (director) => director.name.latin === movie.director
           );
           if (!directorFound) return null;

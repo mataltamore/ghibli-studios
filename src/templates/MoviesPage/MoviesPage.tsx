@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import * as Styled from "./styles";
 import { BiCameraMovie } from "react-icons/bi";
-import body from "../../content/MoviesPage.json";
-import body2 from "../../content/DirectorPage.json";
+import body from "../../content/mockAPI.json";
 import MovieList from "../../components/MovieList/MovieList";
 import StandardPageLayout from "../layouts/StandardPageLayout/StandardPageLayout";
 import Park from "../../../public/images/park.jpg";
@@ -46,7 +45,7 @@ function MovieFilter() {
         >
           Tutti i film
         </Styled.DirectorButton>
-        {body2.directors.map((director) => (
+        {body.directors.map((director) => (
           <Styled.DirectorButton
             type="button"
             key={director.name.latin}
@@ -60,7 +59,7 @@ function MovieFilter() {
       </div>
       <Styled.GridList>
         {filterMoviesByDirectorSelected.map((movie) => {
-          const directorFound = body2.directors.find(
+          const directorFound = body.directors.find(
             (director) => director.name.latin === movie.director
           );
           return directorFound ? (

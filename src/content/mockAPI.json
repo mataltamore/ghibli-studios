@@ -98,5 +98,115 @@
       },
       "description": "Kondo  naque in Giappone nel 1950 e dedicò gli ultimi anni della sua vita allo Studio Ghibli. E- stato animatore per Porco Rosso e Pom Poko, disegnatore di Anna dai capelli rossi e Una Tomba per le lucciole, e supervisore dell-animazione per Kiki - Consegne a domicilio e La Principessa Mononoke. Kondo diresse per Studio Ghibli il lungometraggio d-animazione I Sospiri del mio cuore, e sarebbe dovuto diventare uno dei top director dello Studio al fianco di Miyazaki e Takahata, nonché loro eventuale successore. Purtroppo morì di aneurisma nel 1998. Si dice che la sua morte sia stata causata dal lavoro eccessivo, e pare sia stata la ragione che, nel 1998, ha spinto Miyazaki ad annunciare il suo ritiro. Nonostante Miyazaki abbia continuato a lavorare per altri 15 anni, la morte di Kondo  ha fortemente influenzato il lavoro del Maestro."
     }
+  ],
+  "movies": [
+    {
+      "title": "Earwig e la strega",
+      "year": 2020,
+      "director": "Goro Miyazaki",
+      "src": "/images/movies/earwig.jpg"
+    },
+    {
+      "title": "Quando c'era Marnie",
+      "year": 2014,
+      "director": "Hiromasa Yonebayashi",
+      "src": "/images/movies/marnie.jpg"
+    },
+    {
+      "title": "La Storia della Principessa Splendente",
+      "year": 2013,
+      "director": "Isao Takahata",
+      "src": "/images/movies/principessa.jpg"
+    },
+    {
+      "title": "Si alza il vento",
+      "year": 2013,
+      "director": "Hayao Miyazaki",
+      "src": "/images/movies/vento.jpg"
+    },
+    {
+      "title": "La Collina dei Papaveri",
+      "year": 2011,
+      "director": "Goro Miyazaki",
+      "src": "/images/movies/papaveri.jpg"
+    },
+    {
+      "title": "Arrietty",
+      "year": 2010,
+      "director": "Hiromasa Yonebayashi",
+      "src": "/images/movies/arrietty.jpg"
+    },
+    {
+      "title": "Ponyo sulla scogliera",
+      "year": 2008,
+      "director": "Hayao Miyazaki",
+      "src": "/images/movies/ponyo.jpg"
+    },
+    {
+      "title": "I racconti di terramare",
+      "year": 2006,
+      "director": "Goro Miyazaki",
+      "src": "/images/movies/terramare.jpg"
+    },
+    {
+      "title": "Il Castello Errante di Howl",
+      "year": 2004,
+      "director": "Hayao Miyazaki",
+      "src": "/images/movies/howl.jpg"
+    },
+    {
+      "title": "La città incantata",
+      "year": 2001,
+      "director": "Hayao Miyazaki",
+      "src": "/images/movies/incantata.jpg"
+    },
+    {
+      "title": "Principessa Mononoke",
+      "year": 1997,
+      "director": "Hayao Miyazaki",
+      "src": "/images/movies/mononoke.jpg"
+    },
+    {
+      "title": "I sospiri del mio cuore",
+      "year": 1995,
+      "director": "Yoshifumi Kondo",
+      "src": "/images/movies/sospiri.jpg"
+    },
+    {
+      "title": "Pom Poko",
+      "year": 1994,
+      "director": "Isao Takahata",
+      "src": "/images/movies/pom_poko.jpg"
+    },
+    {
+      "title": "Porco Rosso",
+      "year": 1992,
+      "director": "Hayao Miyazaki",
+      "src": "/images/movies/porco_rosso.jpg"
+    },
+    {
+      "title": "Kiki - Consegne a domicilio",
+      "year": 1989,
+      "director": "Hayao Miyazaki",
+      "src": "/images/movies/kiki.jpg"
+    },
+    {
+      "title": "Il mio vicino Totoro",
+      "year": 1988,
+      "director": "Hayao Miyazaki",
+      "src": "/images/movies/totoro.jpg"
+    },
+    {
+      "title": "Il Castello nel Cielo",
+      "year": 1986,
+      "director": "Hayao Miyazaki",
+      "src": "/images/movies/castello.jpg"
+    },
+    {
+      "title": "Nausicaa della Valle del Vento",
+      "year": 1984,
+      "director": "Hayao Miyazaki",
+      "src": "/images/movies/nausicaa.jpg"
+    }
   ]
 }
