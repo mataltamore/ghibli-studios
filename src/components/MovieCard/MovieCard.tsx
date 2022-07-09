@@ -5,12 +5,12 @@ import Image from "next/image";
 type MovieCardProps = {
   title: string;
   year: number;
-  author: string;
+  director: string;
   image: string;
 };
 
 function MovieCard(props: MovieCardProps) {
-  const { year, author, title, image } = props;
+  const { year, director, title, image } = props;
 
   return (
     <Styled.Card>
@@ -19,8 +19,8 @@ function MovieCard(props: MovieCardProps) {
       </div>
       <div>
         <Styled.MovieItem>
-          <Styled.Label author={author}>{year}</Styled.Label>
-          <p>{author}</p>
+          <Styled.Label director={director}>{year}</Styled.Label>
+          <p>{director}</p>
         </Styled.MovieItem>
       </div>
       <p>{title}</p>

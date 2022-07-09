@@ -11,14 +11,14 @@ export const MovieFilter = styled.div`
   }
 `;
 
-type AuthorButtonProps = {
+type DirectorButtonProps = {
   backgroundColor?: {
     primary: string;
     secondary: string;
   };
 };
 
-export const AuthorButton = styled.button<AuthorButtonProps>`
+export const DirectorButton = styled.button<DirectorButtonProps>`
   color: ${COLOR.GRAY};
   background-color: ${COLOR.GRAY_100};
   border-style: none;

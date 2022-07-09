@@ -38,11 +38,11 @@ export const MovieItem = styled.div`
 `;
 
 type LabelProps = {
-  author: string;
+  director: string;
 };
 
 export const Label = styled.p<LabelProps>`
-  background-color: ${(props) => getLabelColor(props.author)};
+  background-color: ${(props) => getLabelColor(props.director)};
   font-size: ${TEXT_SIZE.SMALL};
   color: ${COLOR.WHITE};
 

@@ -8,7 +8,7 @@ function MovieList() {
       <div>
         {body.movies.map((movie) => (
           <Styled.MovieItem key={movie.title}>
-            <Styled.Label author={movie.author}>{movie.year}</Styled.Label>
+            <Styled.Label director={movie.director}>{movie.year}</Styled.Label>
             <p>{movie.title}</p>
           </Styled.MovieItem>
         ))}

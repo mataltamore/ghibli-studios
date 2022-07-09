@@ -1,7 +1,7 @@
 import { COLOR } from "./constants";
 
-export const getLabelColor = (author: string) => {
-  switch (author) {
+export const getLabelColor = (director: string) => {
+  switch (director) {
     case "Goro Miyazaki":
       return COLOR.GORO;
     case "Hiromasa Yonebayashi":

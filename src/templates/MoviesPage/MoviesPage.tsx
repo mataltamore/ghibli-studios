@@ -22,51 +22,52 @@ function MoviesPage() {
 
 function MovieFilter() {
   const ALL_MOVIES = "All Movies";
-  const [authorSelected, setAuthorSelected] = useState(ALL_MOVIES);
+  const [directorSelected, setDirectorSelected] = useState(ALL_MOVIES);
 
-  function handleChangeAuthor(
+  function handleChangeDirector(
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) {
-    setAuthorSelected(event.currentTarget.value);
+    setDirectorSelected(event.currentTarget.value);
   }
 
-  const filterMoviesByAuthorSelected = body.movies.filter(
-    (movie) => authorSelected === ALL_MOVIES || movie.author === authorSelected
+  const filterMoviesByDirectorSelected = body.movies.filter(
+    (movie) =>
+      directorSelected === ALL_MOVIES || movie.director === directorSelected
   );
 
   return (
     <Styled.MovieFilter>
       <div className="buttonList">
-        <Styled.AuthorButton
+        <Styled.DirectorButton
           type="button"
           value={ALL_MOVIES}
-          onClick={(event) => handleChangeAuthor(event)}
+          onClick={(event) => handleChangeDirector(event)}
         >
           Tutti i film
-        </Styled.AuthorButton>
-        {body.authors.map((author) => (
-          <Styled.AuthorButton
+        </Styled.DirectorButton>
+        {body.directors.map((director) => (
+          <Styled.DirectorButton
             type="button"
-            key={author.name}
-            backgroundColor={author.color}
-            value={author.name}
-            onClick={(event) => handleChangeAuthor(event)}
+            key={director.name}
+            backgroundColor={director.color}
+            value={director.name}
+            onClick={(event) => handleChangeDirector(event)}
           >
-            {author.name}
-          </Styled.AuthorButton>
+            {director.name}
+          </Styled.DirectorButton>
         ))}
       </div>
       <Styled.GridList>
-        {filterMoviesByAuthorSelected.map((movie) => {
-          const authorFound = body.authors.find(
-            (author) => author.name === movie.author
+        {filterMoviesByDirectorSelected.map((movie) => {
+          const directorFound = body.directors.find(
+            (director) => director.name === movie.director
           );
-          return authorFound ? (
+          return directorFound ? (
             <MovieCard
               key={movie.title}
               title={movie.title}
               year={movie.year}
-              author={authorFound.name}
+              director={directorFound.name}
               image={movie.src}
             />
           ) : null;

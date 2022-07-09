@@ -29,9 +29,9 @@ function SideBar() {
               La Storia
             </Styled.MenuItem>
           </Link>
-          <Link href={ROUTE.AUTHORS}>
+          <Link href={ROUTE.DIRECTORS}>
             <Styled.MenuItem
-              pageTitle={ROUTE.AUTHORS}
+              pageTitle={ROUTE.DIRECTORS}
               currentPage={currentPage}
             >
               I registi

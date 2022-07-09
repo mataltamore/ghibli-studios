@@ -2,7 +2,7 @@ export enum ROUTE {
   HOME = "/",
   NEWS = "/news",
   STORY = "/storia",
-  AUTHORS = "/registi",
+  DIRECTORS = "/registi",
   MOVIES = "/filmografia",
   MEDIA = "/multimedia",
   CONTACTS = "/contatti",
