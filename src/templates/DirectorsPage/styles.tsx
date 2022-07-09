@@ -1,14 +1,18 @@
 import styled from "styled-components";
-import { COLOR, Z_INDEX, NAVBAR_HEIGHT } from "../../utilities/constants";
+import {
+  COLOR,
+  Z_INDEX,
+  NAVBAR_HEIGHT,
+  TEXT_SIZE,
+} from "../../utilities/constants";
+import { getLabelColor } from "../../utilities/functions";
 
 export const DirectorFilter = styled.div`
-  & > div {
-    display: flex;
+  display: flex;
 
-    position: sticky;
-    top: ${NAVBAR_HEIGHT};
-    z-index: ${Z_INDEX.ABOVE};
-  }
+  position: sticky;
+  top: ${NAVBAR_HEIGHT};
+  z-index: ${Z_INDEX.ABOVE};
 `;
 
 type DirectorButtonProps = {
@@ -31,5 +35,67 @@ export const DirectorButton = styled.button<DirectorButtonProps>`
   &:hover {
     background-color: ${(props) =>
       props.backgroundColor?.secondary || COLOR.GRAY_300};
+  }
+`;
+
+type MainProps = {
+  director: string;
+};
+
+export const Main = styled.div<MainProps>`
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 1.5rem;
+
+  .image {
+    border: 0.5rem solid ${(props) => getLabelColor(props.director)};
+    border-radius: 5px;
+    position: relative;
+    min-width: 24rem;
+    height: 24rem;
+  }
+
+  .biography {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+
+    & > p {
+      color: ${COLOR.GRAY};
+      font-size: ${TEXT_SIZE.MEDIUM};
+      line-height: 1.25rem;
+      text-align: justify;
+    }
+  }
+
+  .title {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    color: ${(props) => getLabelColor(props.director)};
+
+    & > h2 {
+      font-size: ${TEXT_SIZE.HUGE};
+      font-weight: 500;
+    }
+
+    & > h3 {
+      font-size: ${TEXT_SIZE.MEDIUM};
+      font-weight: 400;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    & > h4 {
+      color: ${COLOR.GRAY};
+      font-weight: 500;
+    }
   }
 `;

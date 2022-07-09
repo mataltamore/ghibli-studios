@@ -11,6 +11,7 @@ import body from "../../content/DirectorPage.json";
 import body2 from "../../content/MoviesPage.json";
 import Image from "next/image";
 import * as Styled from "./styles";
+import { getDateItalianFormat } from "../../utilities/functions";
 
 function DirectorsPage() {
   const router = useRouter();
@@ -61,9 +62,19 @@ function DirectorStory(props: DirectorStoryProps) {
   const { currentDirector } = props;
   const router = useRouter();
 
+  const date = currentDirector.death
+    ? `${currentDirector.birth.location}, ${getDateItalianFormat(
+        currentDirector.birth.date
+      )} - ${currentDirector.death.location}, ${getDateItalianFormat(
+        currentDirector.death.date
+      )}`
+    : `${currentDirector.birth.location}, ${getDateItalianFormat(
+        currentDirector.birth.date
+      )}`;
+
   return (
-    <Styled.DirectorFilter>
-      <div>
+    <>
+      <Styled.DirectorFilter>
         {body2.directors.map((director) => (
           <Styled.DirectorButton
             type="button"
@@ -77,15 +88,27 @@ function DirectorStory(props: DirectorStoryProps) {
             {director.name}
           </Styled.DirectorButton>
         ))}
-      </div>
-      <h2>{currentDirector.name.latin}</h2>
-      <Image
-        src={currentDirector.photo}
-        alt={currentDirector.name.latin}
-        width={500}
-        height={500}
-      />
-    </Styled.DirectorFilter>
+      </Styled.DirectorFilter>
+      <Styled.Main director={currentDirector.name.latin}>
+        <div className="image">
+          <Image
+            src={currentDirector.photo}
+            alt={currentDirector.name.latin}
+            layout="fill"
+          />
+        </div>
+        <div className="biography">
+          <div className="info">
+            <div className="title">
+              <h2>{currentDirector.name.latin}</h2>
+              <h3>{currentDirector.name.kanji}</h3>
+            </div>
+            <h4>{date}</h4>
+          </div>
+          <p>{currentDirector.description}</p>
+        </div>
+      </Styled.Main>
+    </>
   );
 }
 

@@ -31,3 +31,11 @@ export function formatDirectorToUrl(director: string): string {
   const directorSplit = director.split(" ");
   return directorSplit[0] + "_" + directorSplit[1];
 }
+
+export function getDateItalianFormat(date: string) {
+  return new Date(date).toLocaleString("IT-it", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
