@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MAX_WIDTH } from "../../utilities/constants";
+import { MAX_WIDTH } from "../../../utilities/constants";
 
 export const DefaultLayout = styled.main`
   max-width: ${MAX_WIDTH};

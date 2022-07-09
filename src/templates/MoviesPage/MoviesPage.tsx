@@ -1,23 +1,22 @@
 import React, { useState } from "react";
 import * as Styled from "./styles";
 import { BiCameraMovie } from "react-icons/bi";
-import Image from "next/image";
 import body from "../../content/MoviesPage.json";
+import MovieList from "../../components/MovieList/MovieList";
+import StandardPageLayout from "../layouts/StandardPageLayout/StandardPageLayout";
+import Park from "../../../public/images/park.jpg";
+import MovieCard from "../../components/MovieCard/MovieCard";
 
 function MoviesPage() {
   return (
-    <>
-      <Styled.Header>
-        <div>
-          <BiCameraMovie />
-          <h1>Filmografia</h1>
-        </div>
-      </Styled.Header>
-      <Styled.Main>
-        <MovieFilter />
-        <MovieList />
-      </Styled.Main>
-    </>
+    <StandardPageLayout
+      cover={Park.src}
+      title="Filmografia"
+      mainContent={<MovieFilter />}
+      sideContent={<MovieList />}
+    >
+      <BiCameraMovie />
+    </StandardPageLayout>
   );
 }
 
@@ -74,48 +73,6 @@ function MovieFilter() {
         })}
       </Styled.GridList>
     </Styled.MovieFilter>
-  );
-}
-
-function MovieList() {
-  return (
-    <Styled.Aside>
-      <h2>Filmografia temporale</h2>
-      <div>
-        {body.movies.map((movie) => (
-          <Styled.MovieItem key={movie.title}>
-            <Styled.Label author={movie.author}>{movie.year}</Styled.Label>
-            <p>{movie.title}</p>
-          </Styled.MovieItem>
-        ))}
-      </div>
-    </Styled.Aside>
-  );
-}
-
-type MovieCardProps = {
-  title: string;
-  year: number;
-  author: string;
-  image: string;
-};
-
-function MovieCard(props: MovieCardProps) {
-  const { year, author, title, image } = props;
-
-  return (
-    <Styled.Card>
-      <div className="cover">
-        <Image src={image} alt={title} layout="fill" />
-      </div>
-      <div>
-        <Styled.MovieItem>
-          <Styled.Label author={author}>{year}</Styled.Label>
-          <p>{author}</p>
-        </Styled.MovieItem>
-      </div>
-      <p>{title}</p>
-    </Styled.Card>
   );
 }
 
