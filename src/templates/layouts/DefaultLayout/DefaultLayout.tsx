@@ -15,7 +15,7 @@ function DefaultLayout(props: Props) {
   return (
     <Styled.DefaultLayout>
       {toggleSideBar && <SideBar />}
-      <NavBar setToggleSideBar={setToggleSideBar} />
+      <NavBar sidebarState={{ toggleSideBar, setToggleSideBar }} />
       {children}
     </Styled.DefaultLayout>
   );
