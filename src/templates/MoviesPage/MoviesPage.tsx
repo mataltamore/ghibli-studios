@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import * as Styled from "./styles";
 import { BiCameraMovie } from "react-icons/bi";
 import body from "../../content/MoviesPage.json";
+import body2 from "../../content/DirectorPage.json";
 import MovieList from "../../components/MovieList/MovieList";
 import StandardPageLayout from "../layouts/StandardPageLayout/StandardPageLayout";
 import Park from "../../../public/images/park.jpg";
@@ -45,29 +46,29 @@ function MovieFilter() {
         >
           Tutti i film
         </Styled.DirectorButton>
-        {body.directors.map((director) => (
+        {body2.directors.map((director) => (
           <Styled.DirectorButton
             type="button"
-            key={director.name}
+            key={director.name.latin}
             backgroundColor={director.color}
-            value={director.name}
+            value={director.name.latin}
             onClick={(event) => handleChangeDirector(event)}
           >
-            {director.name}
+            {director.name.latin}
           </Styled.DirectorButton>
         ))}
       </div>
       <Styled.GridList>
         {filterMoviesByDirectorSelected.map((movie) => {
-          const directorFound = body.directors.find(
-            (director) => director.name === movie.director
+          const directorFound = body2.directors.find(
+            (director) => director.name.latin === movie.director
           );
           return directorFound ? (
             <MovieCard
               key={movie.title}
               title={movie.title}
               year={movie.year}
-              director={directorFound.name}
+              director={directorFound.name.latin}
               image={movie.src}
             />
           ) : null;

@@ -8,7 +8,6 @@ import {
 } from "../../utilities/functions";
 import { RiMovie2Line } from "react-icons/ri";
 import body from "../../content/DirectorPage.json";
-import body2 from "../../content/MoviesPage.json";
 import Image from "next/image";
 import * as Styled from "./styles";
 import { getDateItalianFormat } from "../../utilities/functions";
@@ -75,17 +74,19 @@ function DirectorStory(props: DirectorStoryProps) {
   return (
     <>
       <Styled.DirectorFilter>
-        {body2.directors.map((director) => (
+        {body.directors.map((director) => (
           <Styled.DirectorButton
             type="button"
-            key={director.name}
+            key={director.name.latin}
             backgroundColor={director.color}
-            value={director.name}
+            value={director.name.latin}
             onClick={() =>
-              router.push(`/registi/${formatDirectorToUrl(director.name)}`)
+              router.push(
+                `/registi/${formatDirectorToUrl(director.name.latin)}`
+              )
             }
           >
-            {director.name}
+            {director.name.latin}
           </Styled.DirectorButton>
         ))}
       </Styled.DirectorFilter>
