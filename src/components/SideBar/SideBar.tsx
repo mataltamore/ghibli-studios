@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import * as Styled from "./styles";
 import Link from "next/link";
 import Image from "next/image";
 import SidebarImage from "../../../public/images/sidebar.png";
 import { useRouter } from "next/router";
-import { ROUTE } from "../../utilities/constants";
+import { ROUTE, ROUTE_DIRECTORS } from "../../utilities/constants";
 
 function SideBar() {
   const { pathname: currentPage } = useRouter();
@@ -29,7 +29,7 @@ function SideBar() {
               La Storia
             </Styled.MenuItem>
           </Link>
-          <Link href={ROUTE.DIRECTORS}>
+          <Link href={ROUTE_DIRECTORS.HAYAO_MIYAZAKI}>
             <Styled.MenuItem
               pageTitle={ROUTE.DIRECTORS}
               currentPage={currentPage}

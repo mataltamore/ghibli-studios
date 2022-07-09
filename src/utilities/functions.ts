@@ -16,3 +16,13 @@ export const getLabelColor = (director: string) => {
       return COLOR.GRAY;
   }
 };
+
+export function formatDirectorUrl(
+  director: string | string[] | undefined
+): string {
+  if (typeof director === "undefined") return "registi";
+  if (Array.isArray(director)) return director[0];
+
+  const directorSplit = director.split("_");
+  return directorSplit[0] + " " + directorSplit[1];
+}
