@@ -42,20 +42,31 @@ export const Menu = styled.ul`
 type MenuItemProps = {
   pageTitle: string;
   currentPage: string;
+  disabled?: boolean;
 };
 
-export const MenuItem = styled.li`
-  color: ${(props: MenuItemProps) =>
-    props.currentPage === props.pageTitle ? COLOR.CYAN : COLOR.GRAY};
+export const MenuItem = styled.li<MenuItemProps>`
+  color: ${(props) =>
+    props.currentPage === props.pageTitle ||
+    (props.currentPage === "/registi/[director]" &&
+      props.pageTitle === "/registi")
+      ? COLOR.CYAN
+      : COLOR.GRAY};
 
-  cursor: pointer;
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
   padding: 0.3rem 0rem;
   text-transform: uppercase;
 
   &:hover {
-    color: ${COLOR.CYAN};
+    color: ${(props) => (props.disabled ? COLOR.GRAY : COLOR.CYAN)};
   }
 `;
+
+MenuItem.defaultProps = {
+  pageTitle: "",
+  currentPage: "",
+  disabled: false,
+};
 
 export const CopyText = styled.p`
   color: ${COLOR.GRAY};

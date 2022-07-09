@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import * as Styled from "./styles";
 import Link from "next/link";
 import Image from "next/image";
 import SidebarImage from "../../../public/images/sidebar.png";
 import { useRouter } from "next/router";
-import { ROUTE } from "../../utilities/constants";
+import { ROUTE, ROUTE_DIRECTORS } from "../../utilities/constants";
 
 function SideBar() {
   const { pathname: currentPage } = useRouter();
@@ -19,19 +19,23 @@ function SideBar() {
               Homepage
             </Styled.MenuItem>
           </Link>
-          <Link href={ROUTE.NEWS}>
-            <Styled.MenuItem pageTitle={ROUTE.NEWS} currentPage={currentPage}>
-              News
-            </Styled.MenuItem>
-          </Link>
+          {/*<Link href={ROUTE.NEWS}>*/}
+          <Styled.MenuItem
+            pageTitle={ROUTE.NEWS}
+            currentPage={currentPage}
+            disabled
+          >
+            News
+          </Styled.MenuItem>
+          {/*</Link>*/}
           <Link href={ROUTE.STORY}>
             <Styled.MenuItem pageTitle={ROUTE.STORY} currentPage={currentPage}>
               La Storia
             </Styled.MenuItem>
           </Link>
-          <Link href={ROUTE.AUTHORS}>
+          <Link href={ROUTE_DIRECTORS.HAYAO_MIYAZAKI}>
             <Styled.MenuItem
-              pageTitle={ROUTE.AUTHORS}
+              pageTitle={ROUTE.DIRECTORS}
               currentPage={currentPage}
             >
               I registi
@@ -42,19 +46,24 @@ function SideBar() {
               Filmografia
             </Styled.MenuItem>
           </Link>
-          <Link href={ROUTE.MEDIA}>
-            <Styled.MenuItem pageTitle={ROUTE.MEDIA} currentPage={currentPage}>
-              Multimedia
-            </Styled.MenuItem>
-          </Link>
-          <Link href={ROUTE.CONTACTS}>
-            <Styled.MenuItem
-              pageTitle={ROUTE.CONTACTS}
-              currentPage={currentPage}
-            >
-              Contatti
-            </Styled.MenuItem>
-          </Link>
+          {/*<Link href={ROUTE.MEDIA}>*/}
+          <Styled.MenuItem
+            pageTitle={ROUTE.MEDIA}
+            currentPage={currentPage}
+            disabled
+          >
+            Multimedia
+          </Styled.MenuItem>
+          {/*</Link>*/}
+          {/*<Link href={ROUTE.CONTACTS}>*/}
+          <Styled.MenuItem
+            pageTitle={ROUTE.CONTACTS}
+            currentPage={currentPage}
+            disabled
+          >
+            Contatti
+          </Styled.MenuItem>
+          {/*</Link>*/}
         </Styled.Menu>
       </div>
       <Styled.CopyText>

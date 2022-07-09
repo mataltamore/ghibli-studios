@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import * as Styled from "./styles";
 import { BiCameraMovie } from "react-icons/bi";
 import body from "../../content/MoviesPage.json";
+import body2 from "../../content/DirectorPage.json";
 import MovieList from "../../components/MovieList/MovieList";
 import StandardPageLayout from "../layouts/StandardPageLayout/StandardPageLayout";
 import Park from "../../../public/images/park.jpg";
@@ -22,51 +23,52 @@ function MoviesPage() {
 
 function MovieFilter() {
   const ALL_MOVIES = "All Movies";
-  const [authorSelected, setAuthorSelected] = useState(ALL_MOVIES);
+  const [directorSelected, setDirectorSelected] = useState(ALL_MOVIES);
 
-  function handleChangeAuthor(
+  function handleChangeDirector(
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) {
-    setAuthorSelected(event.currentTarget.value);
+    setDirectorSelected(event.currentTarget.value);
   }
 
-  const filterMoviesByAuthorSelected = body.movies.filter(
-    (movie) => authorSelected === ALL_MOVIES || movie.author === authorSelected
+  const filterMoviesByDirectorSelected = body.movies.filter(
+    (movie) =>
+      directorSelected === ALL_MOVIES || movie.director === directorSelected
   );
 
   return (
     <Styled.MovieFilter>
       <div className="buttonList">
-        <Styled.AuthorButton
+        <Styled.DirectorButton
           type="button"
           value={ALL_MOVIES}
-          onClick={(event) => handleChangeAuthor(event)}
+          onClick={(event) => handleChangeDirector(event)}
         >
           Tutti i film
-        </Styled.AuthorButton>
-        {body.authors.map((author) => (
-          <Styled.AuthorButton
+        </Styled.DirectorButton>
+        {body2.directors.map((director) => (
+          <Styled.DirectorButton
             type="button"
-            key={author.name}
-            backgroundColor={author.color}
-            value={author.name}
-            onClick={(event) => handleChangeAuthor(event)}
+            key={director.name.latin}
+            backgroundColor={director.color}
+            value={director.name.latin}
+            onClick={(event) => handleChangeDirector(event)}
           >
-            {author.name}
-          </Styled.AuthorButton>
+            {director.name.latin}
+          </Styled.DirectorButton>
         ))}
       </div>
       <Styled.GridList>
-        {filterMoviesByAuthorSelected.map((movie) => {
-          const authorFound = body.authors.find(
-            (author) => author.name === movie.author
+        {filterMoviesByDirectorSelected.map((movie) => {
+          const directorFound = body2.directors.find(
+            (director) => director.name.latin === movie.director
           );
-          return authorFound ? (
+          return directorFound ? (
             <MovieCard
               key={movie.title}
               title={movie.title}
               year={movie.year}
-              author={authorFound.name}
+              director={directorFound.name.latin}
               image={movie.src}
             />
           ) : null;

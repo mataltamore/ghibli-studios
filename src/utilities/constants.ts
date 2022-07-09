@@ -2,10 +2,18 @@ export enum ROUTE {
   HOME = "/",
   NEWS = "/news",
   STORY = "/storia",
-  AUTHORS = "/registi",
+  DIRECTORS = "/registi",
   MOVIES = "/filmografia",
   MEDIA = "/multimedia",
   CONTACTS = "/contatti",
+}
+
+export enum ROUTE_DIRECTORS {
+  HAYAO_MIYAZAKI = "/registi/Hayao_Miyazaki",
+  GORO_MIYAZAKI = "/registi/Goro_Miyazaki",
+  HIROMASA_YONEBAYASHI = "/registi/Hiromasa_Yonebayashi",
+  ISAO_TAKAHATA = "/registi/Isao_Takahata",
+  YOSHIFUMI_KONDO = "/registi/Yoshifumi_Kondo",
 }
 
 export const MAX_WIDTH = "90rem";
